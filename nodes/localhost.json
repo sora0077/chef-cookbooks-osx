@@ -1,0 +1,34 @@
+{
+    "user": {
+        "name": "",
+        "group": "staff",
+        "home": "/Users/",
+        "tmp": "/Users//.chef-workspace"
+    },
+    "homebrew": {
+        "run_as": ""
+    },
+    "run_list": [
+        "recipe[mac_os_x]",
+        "recipe[dmg]",
+        "recipe[homebrew]",
+        "recipe[brew]",
+        "recipe[git]",
+        "recipe[rc.d]",
+        "recipe[rbenv]",
+        "recipe[svm]",
+        "recipe[heroku-toolbelt]",
+        "recipe[install_zsh]"
+    ],
+    "homebrew": {
+        "packages": [
+            "git-flow",
+            "tig",
+            "tmux",
+            "tree",
+            "packer",
+            "jq",
+            "watch"
+        ]
+    }
+}
