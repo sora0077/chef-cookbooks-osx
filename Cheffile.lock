@@ -1,0 +1,14 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    dmg (2.2.0)
+    homebrew (1.9.0)
+    mac_os_x (1.4.6)
+    zip_app (0.2.2)
+
+DEPENDENCIES
+  dmg (>= 0)
+  homebrew (>= 0)
+  mac_os_x (>= 0)
+  zip_app (>= 0)
+

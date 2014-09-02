@@ -16,4 +16,8 @@ template "#{node[:user][:home]}/.gitconfig" do
     owner "#{node[:user][:name]}"
     group "#{node[:user][:group]}"
     mode "0644"
+    variables({
+        :user_name => node[:user][:name],
+        :user_email => node[:user][:email]
+    })
 end

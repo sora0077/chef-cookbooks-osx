@@ -1,6 +1,7 @@
 .vagrant
 /cookbooks
-.chef/cache/
+.chef/
+!.chef/knif.rb
 
 # Bundler
 bin/*

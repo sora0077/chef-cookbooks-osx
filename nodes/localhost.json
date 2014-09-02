@@ -3,6 +3,7 @@
         "name": "",
         "group": "staff",
         "home": "/Users/",
+        "email": "",
         "tmp": "/Users//.chef-workspace"
     },
     "homebrew": {
@@ -16,6 +17,7 @@
         "recipe[git]",
         "recipe[rc.d]",
         "recipe[rbenv]",
+        "recipe[pyenv]",
         "recipe[svm]",
         "recipe[heroku-toolbelt]",
         "recipe[install_zsh]"
@@ -25,10 +27,29 @@
             "git-flow",
             "tig",
             "tmux",
+            "vim",
             "tree",
             "packer",
             "jq",
             "watch"
+        ]
+    },
+    "homebrew_cask": {
+        "packages": [
+            "google-chrome",
+            "google-drive",
+            "google-japanese-ime",
+            "bettertouchtool",
+            "brackets",
+            "mamp",
+            "mysqlworkbench",
+            "kobito",
+            "virtualbox",
+            "vagrant",
+            "atom",
+            "pycharm-ce",
+            "hipchat",
+            "brackets"
         ]
     }
 }

@@ -12,9 +12,16 @@ fi
 
 # Customize to your needs...
 
+if which vim > /dev/null; then
+    export EDITOR=`which vim`
+    export VISUAL=`which vim`
+else
+    export EDITOR=`which vi`
+    export VISUAL=`which vi`
+fi
+
 for i in $HOME/.rc.d/*.sh ; do
     if [ -r "$i" ]; then
         source $i
     fi
 done
-

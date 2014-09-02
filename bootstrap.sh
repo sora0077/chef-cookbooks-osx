@@ -21,9 +21,9 @@ if [ ! -d "/opt/chef/" ]; then
     sudo /opt/chef/embedded/bin/gem install knife-solo
     sudo /opt/chef/embedded/bin/gem install librarian-chef
 
-    echo ''
-    /opt/chef/embedded/bin/librarian-chef install
 fi
+echo 'Install or Update Cheffile'
+/opt/chef/embedded/bin/librarian-chef install
 
 echo 'Install Recipes'
 sudo chef-solo -c ./config/solo.rb -j ./nodes/localhost.json
